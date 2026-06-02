@@ -1,0 +1,776 @@
+@import "~bootstrap/scss/bootstrap";
+@import "swiper/css/bundle";
+@import "slick-carousel/slick/slick.css";
+@import "../../public/assets/scss/main.scss";
+@import "../../public/assets/css/style.css";
+@import "../../public/assets/css/mains.css";
+@import "../../public/assets/css/bhavani.css";
+@import "../../public/assets/css/flat-icon.css";
+
+.tp-service-title {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+.tp-service-title a:hover {
+  color: #fecb00;
+}
+
+p {
+  font-size: 15px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+// h3{
+//     font-size: 80px;
+// }
+
+.tp-section-2-title {
+  font-size: 60px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  font-weight: 500;
+  color: #1d3a72;
+}
+
+.tp-service-item:hover .tp-service-wrap::before {
+  top: 10px;
+  height: calc(100% - 20px);
+}
+
+.tp-service-item:hover .tp-service-icon {
+  animation: icon-bounce 0.8s 1;
+}
+
+.tp-service-item:hover .tp-service-btn {
+  transform: translateY(25px);
+}
+
+.tp-service-item:hover .tp-service-btn span::before {
+  transform: scale(1.2);
+}
+
+.tp-service-item:hover .tp-service-btn span svg {
+  transform: scale(1.1);
+}
+
+/* Icon */
+.tp-service-icon {
+  height: 68px;
+}
+
+/* Button */
+.tp-service-btn {
+  transform: translateY(35px);
+  transition: all 0.3s ease-out;
+}
+
+/* Circle Container */
+.tp-service-btn span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  height: 52px;
+  width: 52px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* 🔥 Thinner Circle Border */
+// .tp-service-btn span::before {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 50%;
+// //   border: 3px solid var(--tp-theme-primary); /* Reduced from 6px */
+//    border: 3px solid var(--tp-theme-5); /* Reduced from 6px */
+
+//   background-color: var(--tp-common-white);
+//   z-index: -1;
+//   transition: all 0.3s ease-out;
+// }
+
+.tp-service-btn span::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fecb00; /* Yellow color */
+  background-color: var(--tp-common-white);
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+/* Icon inside circle */
+.tp-service-btn span svg {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.tp-event-title {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+.tp-event-title a:hover {
+  color: #fecb00;
+}
+
+.tp-event-item:hover .tp-event-arrow a {
+  color: #fecb00;
+}
+
+/* Base */
+.tp-shop-widget .nav-link {
+  position: relative;
+  padding-left: 18px;
+  color: #292929;
+  transition: all 0.3s ease;
+}
+
+/* Dot default = grey */
+.tp-shop-widget .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ccc; /* grey */
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.tp-shop-widget .nav-link:hover {
+  color: #fecb00;
+}
+
+.tp-shop-widget .nav-link:hover::before {
+  background-color: #fecb00;
+}
+
+/* Active */
+.tp-shop-widget .nav-link.active {
+  color: #292929;
+}
+
+/* IMPORTANT: keep dot grey when active */
+.tp-shop-widget .nav-link.active::before {
+  background-color: #ccc;
+}
+
+/* benny css */
+
+// .tp-header-info-item a {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 6px;
+// }
+
+// .tp-header-info-item span {
+//   line-height: 1;
+// }
+
+// .tp-header-info-item svg {
+//   vertical-align: middle;
+// }
+
+/* close */
+
+.tp-about-campus-thumb {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.tp-about-campus-thumb img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.tp-about-campus-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay color */
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.tp-sidebar-post-item a:hover .tp-sidebar-post-title {
+  color: #fecb00 !important;
+}
+
+.tp-sidebar-post-item a:hover .tp-sidebar-post-number {
+  color: #fecb00 !important;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes it behave like background-image: cover */
+  z-index: -1;
+}
+
+.hero-title {
+  font-size: clamp(18px, 5vw, 70px);
+  margin-bottom: 5px;
+}
+
+.hero-subtitle {
+  font-size: clamp(12px, 3vw, 26px);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Wrapper spacing */
+.custom-filter-wrapper {
+  margin-top: 20px;
+}
+
+.custom-filter-row {
+  row-gap: 5px;
+}
+
+/* Smaller NiceSelect */
+.custom-select-box .nice-select {
+  height: 40px;
+  line-height: 38px;
+  padding: 0 35px 0 14px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Arrow fix */
+.custom-select-box .nice-select:after {
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Dropdown list size */
+.custom-select-box .nice-select .list {
+  font-size: 14px;
+}
+
+.custom-select-box .nice-select:after {
+  display: none !important;
+}
+
+.custom-select-box .nice-select::before {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+}
+
+//* navbar styles starts //*
+
+/* ================================
+   Clean Hover – Highlight Only
+================================ */
+
+.tp-megamenu-fullwidth-list ul li a {
+  font-size: 15px;
+  display: inline-block;
+  white-space: nowrap;
+  color: #55585b;
+  text-decoration: none !important;
+  // transition: color 0.2s ease; /* smooth but no animation effect */
+}
+
+/* Highlight only */
+.tp-megamenu-fullwidth-list ul li a:hover {
+  color: #292929 !important;
+  font-weight: medium;
+}
+
+/* Completely remove theme animations & indicators */
+.tp-megamenu-fullwidth-list ul li a::before,
+.tp-megamenu-fullwidth-list ul li a::after {
+  display: none !important;
+  content: none !important;
+  width: 0 !important;
+}
+
+.tp-megamenu-fullwidth-list ul li {
+  border-left: none !important;
+}
+
+.tp-megamenu-fullwidth-list ul li a {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Stop hover movement completely */
+.tp-megamenu-fullwidth-list ul li a {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  transform: none !important;
+  transition: color 0.2s ease !important; /* only color transition */
+}
+
+/* Prevent theme hover shifting */
+.tp-megamenu-fullwidth-list ul li a:hover {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  transform: none !important;
+}
+
+//* navbar styles ends //*
+
+.tp-campus-life-arrow {
+  display: flex;
+  align-items: start;
+  gap: 25px; /* space between arrows */
+  margin-top: 15px; /* space below button */
+}
+
+.tp-campus-life-arrow span:hover {
+  color: #fecb00;
+  transition: 0.3s ease;
+}
+
+// .tp-product-link {
+//   font-weight: 500;           /* normal state */
+//   transition: all 0.2s ease;  /* smooth effect */
+// }
+
+.tp-product-link:hover {
+  font-weight: 500; /* bold on hover */
+}
+
+@media (max-width: 768px) {
+  .tp-about-campus-content {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+
+  .tp-about-campus-box {
+    overflow: hidden;
+  }
+}
+
+.menu-text:hover {
+  border-bottom: 2px solid #fecb00;
+  padding-bottom: 2px;
+}
+
+// .product-desc-img {
+//   width: 100%;
+//   height: 350px;
+//   object-fit: cover;
+// }
+
+// @media (max-width: 768px) {
+//   .product-desc-img {
+//     height: 250px;
+//   }
+// }
+
+//* industries we serve page styles starts //*
+// .img-wrapper {
+//   position: relative;
+//   width: 100%;
+//   height: 220px; /* 👈 same height for all cards */
+//   overflow: hidden;
+//   border-radius: 10px;
+// }
+
+// .play-center {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// .card-img {
+//   position: relative;
+//   width: 100%;
+//   height: 150px;
+//   border-radius: 10px;
+//   overflow: hidden;
+
+// }
+
+// .card-img.wide {
+//   height: 180px;
+
+// }
+
+// .tp-about-small-img.h-100 {
+//   height: 100%;
+// }
+
+// .img-cover {
+//   object-fit: cover;
+// }
+
+// .row.g-3 {
+//   align-items: stretch;
+// }
+
+//* search functionality *//
+
+// .search-dropdown {
+//   position: absolute;
+//   top: 48px;
+//   left: 0;
+//   width: 720px;
+//   background: #fff;
+//   border-radius: 12px;
+//   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+//   padding: 15px;
+// }
+
+// .section {
+//   margin-bottom: 15px;
+// }
+
+// .section-title {
+//   font-size: 13px;
+//   font-weight: 600;
+//   color: #666;
+//   margin-bottom: 8px;
+// }
+
+// .search-row {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px 5px;
+//   border-bottom: 1px solid #f1f1f1;
+// }
+
+// .left {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .img {
+//   width: 40px;
+//   height: 40px;
+//   position: relative;
+//   background: #f5f5f5;
+//   border-radius: 6px;
+//   overflow: hidden;
+// }
+
+// .title {
+//   font-size: 13px;
+//   font-weight: 500;
+//   margin: 0;
+// }
+
+// .subtitle {
+//   font-size: 11px;
+//   color: #888;
+// }
+
+// .right {
+//   display: flex;
+//   gap: 8px;
+// }
+
+// .btn {
+//   font-size: 12px;
+//   padding: 5px 12px;
+//   border-radius: 8px;
+//   text-decoration: none;
+// }
+
+// .btn.primary {
+//   background: #1d3a72;
+//   color: #fff;
+// }
+
+// .btn.outline {
+//   border: 1px solid #1d3a72;
+//   color: #1d3a72;
+//   background: transparent;
+// }
+
+// .see-all {
+//   text-align: center;
+//   margin-top: 10px;
+//   font-size: 12px;
+// }
+
+// .btn-red {
+//   background: #d71920;
+//   color: #fff;
+//   padding: 6px 14px;
+//   border-radius: 20px;
+//   font-size: 12px;
+//   text-decoration: none;
+// }
+
+// .btn-outline {
+//   border: 1px solid #d71920;
+//   color: #d71920;
+//   padding: 6px 14px;
+//   border-radius: 20px;
+//   font-size: 12px;
+//   text-decoration: none;
+// }
+
+// .search-dropdown {
+//   font-family: inherit;
+// }
+
+.search-dropdown {
+  font-family: inherit;
+
+  max-height: 520px; /* ✅ prevent overflow crash */
+  overflow-y: auto; /* ✅ enable scroll */
+
+  padding: 25px 40px; /* ✅ more right space (as you wanted) */
+
+  scrollbar-width: none; /* ✅ Firefox */
+  -ms-overflow-style: none; /* ✅ IE/Edge */
+}
+
+/* ✅ Chrome / Safari */
+.search-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+/* section spacing */
+.search-dropdown .section {
+  margin-bottom: 25px;
+}
+
+/* section title */
+.search-dropdown .section-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* each row */
+.search-dropdown .search-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+/* left side */
+.search-dropdown .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* image */
+.search-dropdown .img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+/* title */
+.search-dropdown .title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* subtitle */
+.search-dropdown .subtitle {
+  font-size: 12px;
+  color: #888;
+}
+
+/* right side buttons */
+.search-dropdown .right {
+  display: flex;
+  gap: 10px;
+}
+
+/* buttons */
+.search-dropdown .btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* primary button */
+.search-dropdown .btn.primary {
+  background-color: #1d3a72;
+  color: #fff;
+}
+
+/* outline button */
+.search-dropdown .btn.outline {
+  border: 1px solid #1d3a72;
+  color: #1d3a72;
+}
+
+/* see all */
+.search-dropdown a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #1d3a72;
+  font-weight: 600;
+}
+
+/* service-styles1 page all styles dated 11-05-2026 */
+@media (max-width: 991px) {
+  .services-heading {
+    padding-top: 20px;
+    //  display: flex;
+    // justify-content: center;
+    // text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-heading {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-heading {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Below laptop screens */
+@media (max-width: 1199px) {
+  .services-style-one-area {
+    padding-top: 30px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services-responsive-row {
+    row-gap: 60px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .service-full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+}
+
+/* service-styles1 page all styles dated 11-05-2026 ends */
+
+/* searchbar responsive style dated 12-05-2026*/
+
+@media (min-width: 1024px) {
+  .search-dropdown {
+    width: 290% !important;
+    left: 0;
+    transform: translateX(-64%);
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .search-dropdown {
+    width: 100% !important; /* same as mobile */
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* searchbar responsive style dated 12-05-2026*/
+
+// @keyframes slideUp {
+//   from {
+//     opacity: 0;
+//     transform: translateY(80px);
+//   }
+
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// .animate-slideUp {
+//   animation: slideUp 1s ease-out forwards;
+// }
+
+@keyframes bottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottom-to-top {
+  opacity: 0;
+  animation: bottomToTop 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes leftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-to-right {
+  opacity: 0;
+  animation: leftToRight 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}

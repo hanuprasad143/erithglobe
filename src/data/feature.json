@@ -1,0 +1,25 @@
+
+
+[
+  {
+    "img": "/assets/img/icon/service/icon1.png",   
+    "title": "Innovation & Growth",
+    "desc": "We drive innovation through research, advanced technologies, and sustainable practices that ensure business growth."
+  },
+  {
+    "img": "/assets/img/icon/service/icon2.png",   
+    "title": "Global Partnerships",
+    "desc": "We collaborate with organizations worldwide, creating long-term value through trusted global alliances."
+  },
+  {
+    "img": "/assets/img/icon/service/icon3.png",   
+    "title": "Technology Solutions",
+    "desc": "From cloud to AI, we deliver cutting-edge technology solutions that empower enterprises to scale efficiently."
+  },
+  {
+    "img": "/assets/img/icon/service/icon4.png",   
+    "title": "Sustainability & Impact",
+    "desc": "We integrate eco-friendly practices and responsible business strategies to create lasting positive impact for communities and the environment."
+  }  
+
+]

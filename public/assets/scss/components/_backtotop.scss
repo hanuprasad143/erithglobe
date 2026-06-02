@@ -1,0 +1,99 @@
+// @use "../utils" as *;
+
+// /*----------------------------------------*/
+// /*  2.1 Back to top
+// /*----------------------------------------*/
+
+// .back-to-top-wrapper {
+//   position: fixed;
+//   left: 50%; // center horizontally
+//   transform: translateX(-50%); // shift back by 50% of width
+//   bottom: 0; // distance from bottom
+//   width: 84px;
+//   height: 44px;
+//   cursor: pointer;
+//   display: block;
+//   z-index: 999;
+//   opacity: 0;
+//   visibility: hidden;
+//   border-radius: 50%;
+//   @extend %tp-transition-common;
+
+//   @media #{$xs} {
+//     bottom: 20px;
+//   }
+
+//   &.back-to-top-btn-show {
+//     visibility: visible;
+//     opacity: 1;
+//     bottom: 570px; // adjust as needed
+//   }
+// }
+// .back-to-top-btn {
+//   display: inline-block;
+//   width: 84px;
+//   height: 74px;
+//   line-height: 44px;
+//   text-align: center;
+//   background: var(--tp-common-black);
+//   box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+//   color: var(--tp-common-white);
+//   border-radius: 50%;
+//   @extend %tp-transition-transform;
+
+//   & svg {
+//     @include transform(translateY(-2px));
+//   }
+
+//   &:hover {
+//     @include transform(translateY(-4px));
+//   }
+// }
+
+@use "../utils" as *; // ← add this line
+
+.back-to-top-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 84px;
+  height: 44px;
+  cursor: pointer;
+  display: block;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  @extend %tp-transition-common !optional;
+
+  @media #{$xs} {
+    bottom: 20px;
+  }
+
+  &.back-to-top-btn-show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.back-to-top-btn {
+  display: inline-block;
+  width: 84px;
+  height: 74px;
+  line-height: 44px;
+  text-align: center;
+  background: var(--tp-common-black);
+  box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+  color: var(--tp-common-white);
+  border-radius: 50%;
+  @extend %tp-transition-transform !optional;
+
+  & svg {
+    @include transform(translateY(-2px));
+  }
+
+  &:hover {
+    @include transform(translateY(-4px));
+  }
+}

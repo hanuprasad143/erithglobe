@@ -1,0 +1,60 @@
+$colors: (
+  "common": (
+    "white": #ffffff,
+    "black": #000,
+    "black-1": #010f1c,
+  ),
+  "grey": (
+    "1": #f6f4ee,
+    "2": #84807b,
+    "3": #55585b,
+    "4": #efede7,
+    "5": #636366,
+    "6": #4f5158,
+  ),
+  "red": (
+    "1": #1d3a72,
+    "2": #1d3a72,
+    "3": #1d3a72,
+  ),
+  "blue": (
+    "1": #f1f3f9,
+  ),
+  "heading": (
+    "primary": #292929,
+    "2": #031f42,
+    "3": #0a1d3a,
+    "4": #161821,
+  ),
+  "text": (
+    "body": #57595f,
+  ),
+  "theme": (
+    "primary": #1d3a72,
+    "secondary": #1d3a72,
+    "3": #ff7162,
+    "4": #1d3a72,
+    "5": #f0ec51,
+    "6": #1e1e2f,
+    "7": #4661fd,
+    "8": #006b61,
+  ),
+  "dashboard": (
+    "primary": #1d3a72,
+    "secondary": #1d3a72,
+    "3": #5b7d55,
+    "danger": #1d3a72,
+    "sucess": #0f9f55,
+    "warning": #f59b12,
+    "info": #5974ff,
+  ),
+  "border": (
+    "primary": #eaebed,
+    "2": #e4e2dc,
+  ),
+);
+
+$white: #fff;
+$black: #000;
+$theme-primary: #1d3a72;
+$border-primary: #eaebed;

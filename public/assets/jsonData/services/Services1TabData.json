@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "tabClass": "show active",
+    "tabId": "tab1",
+    "ariaLabelled": "nav-id-1",
+    "tabData": [
+      {
+        "id": 1,
+        "animationDelay": 0,
+        "icon": "flaticon-quality",
+        "title": "Industrial Sealing Expertise",
+        "text": "Backed by extensive industrial experience, our team excels in handling the toughest conditions with exceptional solution-oriented skills. This ensures customers achieve maximum returns on their investments",
+        "img": "/assets/img/industries/industries.jpg"
+      },
+      {
+        "id": 2,
+        "animationDelay": "",
+        "icon": "flaticon-innovation",
+        "title": "Flow Control Systems",
+        "text": "With a continual enhancement approach, we focus on product development, engineering services, and customer feedback to maintain an unrivalled portfolio that sets industry benchmarks.",
+        "img": "/assets/img/industries/flow_control.jpeg"
+      },
+      {
+        "id": 3,
+        "animationDelay": "",
+        "icon": "flaticon-solution",
+        "title": "Pipeline Integrity Solutions",
+        "text": "We deliver innovative, problem-solving, and cost-effective products and services across sealing, pipelines, and corrosion technologies—providing everything our customers need and more.",
+        "img": "/assets/img/industries/pipeline_construction.jpeg"
+      },
+      {
+        "id": 4,
+        "animationDelay": "",
+        "icon": "flaticon-sustainable",
+        "title": "Safety & Compliance Focus",
+        "text": "Our dedication extends beyond industries—we strive to create a better, more compassionate world by supporting global industries with environmentally compliant technologies.",
+        "img": "/assets/img/industries/safety_check.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tabClass": "",
+    "tabId": "tab2",
+    "ariaLabelled": "nav-id-2",
+    "tabData": [
+      {
+        "id": 1,
+        "animationDelay": 0,
+        "icon": "flaticon-support",
+        "title": "Reliable Product Supply",
+        "text": "Our foremost commitment is to our customers—delivering niche and sophisticated solutions tailored to industrial challenges that enhance productivity and reduce operational costs.",
+        "img": "/assets/img/industries/erithpacking.jpg"
+      },
+      {
+        "id": 2,
+        "animationDelay": "",
+        "icon": "flaticon-idea",
+        "title": "Engineering Support",
+        "text": "Through advanced technologies and smart engineering, we create solutions that resolve complex challenges while promoting safer and more efficient operations.",
+        "img": "/assets/img/industries/support.jpg"
+      },
+      {
+        "id": 3,
+        "animationDelay": "",
+        "icon": "flaticon-analyst",
+        "title": "Global Sourcing & Partnerships",
+        "text": "A skilled team of dexterous engineers, competent sales professionals, and customer service specialists ensures that every solution is built on deep industry knowledge and customer understanding.",
+        "img": "/assets/img/industries/global.jpeg"
+      },
+      {
+        "id": 4,
+        "animationDelay": "",
+        "icon": "flaticon-sustainable",
+        "title": "Custom Solutions",
+        "text": "By driving operational efficiency and supporting environmentally conscious practices, we contribute to a safer, more sustainable industrial ecosystem.",
+        "img": "/assets/img/industries/custom.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tabClass": "",
+    "tabId": "tab3",
+    "ariaLabelled": "nav-id-3",
+    "tabData": [
+      {
+        "id": 1,
+        "animationDelay": 0,
+        "icon": "flaticon-quality",
+        "title": "Gaskets",
+        "text": "We provide durable, tested solutions designed to meet global standards. Each product is built for reliability and long-lasting performance.",
+        "img": "/assets/img/industries/Gaskets.png",
+        "link": "/company/quality#erith-products-offerings"
+      },
+      {
+        "id": 2,
+        "animationDelay": "",
+        "icon": "flaticon-development",
+        "title": "Valves",
+        "text": "Our skilled engineers design and develop tailored solutions with precision. Their expertise ensures innovation and quality at every step.",
+        "img": "/assets/img/industries/Valves.png",
+        "link": "http://localhost:3000/products/specialized-industrial-valves"
+      },
+      {
+        "id": 3,
+        "animationDelay": "",
+        "icon": "flaticon-solution-4",
+        "title": "Expansion Joints",
+        "text": "We deliver optimized solutions that reduce operational costs without compromising on quality. Every offering is focused on maximizing value.",
+        "img": "/assets/img/industries/expansion_joints.png",
+        "link": "http://localhost:3000/products/expansion-joint"
+      },
+      {
+        "id": 4,
+        "animationDelay": "",
+        "icon": "flaticon-global",
+        "title": "Isolation Kits",
+        "text": "With worldwide industry experience, we bring proven practices and innovations to every project. Customers benefit from our broad global perspective.",
+        "img": "/assets/img/industries/isolation_kits.png",
+        "link": "https://gptindustries.com/products/isolation-gaskets-kits/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+@forward "../css/spacing.css";
+@forward "../css/font-awesome-pro.css";
+@forward "../css/animate.css";
+@forward "theme";
+@forward "components";
+@forward "layout";
+
+.social-sidebar {
+  position: fixed;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Share button (main visible icon) */
+.share-icon {
+  background: #1d3a72;
+  color: #fff;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-icon:hover {
+  background: #f7c600;
+  color: #000;
+}
+
+/* Hidden icons list */
+.social-icons {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(60px);
+  transition: all 0.4s ease;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.social-icons li {
+  margin: 8px 0;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  border-radius: 8px 0 0 8px;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Brand Colors */
+.social-icons a.whatsapp {
+  background: #25d366; /* WhatsApp Green */
+}
+
+.social-icons a.instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.social-icons a.twitter {
+  background: #1da1f2; /* Twitter Blue */
+}
+
+.social-icons a.linkedin {
+  background: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a.youtube {
+  background: #ff0000; /* YouTube Red */
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: translateX(-5px);
+  filter: brightness(1.1);
+}
+
+/* Hide on mobile */
+// @media (max-width: 768px) {
+//   .social-sidebar {
+//     display: none;
+//   }
+// }
